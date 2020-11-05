@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_foodImg"
+            android:layout_width="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            android:layout_height="250dp"/>
+        <TextView
+            android:id="@+id/tv_foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Spaghetti Carbonara with Super Italian Cheese"
+            android:fontFamily="@font/san_francisco"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/tv_foodDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Our Chef's Specialty"
+            android:fontFamily="@font/san_francisco"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_foodPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 230000.00"
+                android:fontFamily="@font/san_francisco"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@id/tv_foodPrice">
+
+                <ImageButton
+                    android:id="@+id/btn_sub"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_minus"
+                    android:layout_centerVertical="true"
+                    android:textSize="40dp"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_foodQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="1000"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/san_francisco"
+                    android:layout_centerInParent="true"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_add"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_plus"
+                    android:text="+"
+                    android:textSize="40dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

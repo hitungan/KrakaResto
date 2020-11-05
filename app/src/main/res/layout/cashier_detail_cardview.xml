@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/Cash_Detail_Qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:text="x107"
+                android:fontFamily="@font/san_francisco"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Cash_Detail_Name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/san_francisco"
+                android:layout_marginBottom="15dp"
+                android:text="Indomie rasa yang telah menjadi abu"
+                android:textSize="18sp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/Cash_Detail_Price"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="250dp"-->
+<!--                android:text="hRp 100000.00"-->
+<!--                android:layout_marginBottom="7dp"-->
+<!--                android:layout_marginTop="7dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:textSize="15sp" />-->
+            <TextView
+                android:id="@+id/Cash_Detail_PriceSum"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Rp 1000000.00"
+                android:fontFamily="@font/san_francisco"
+                android:layout_marginLeft="260dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:textSize="15sp" />
+
+
+
+        </RelativeLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1px"-->
+<!--            android:background="#000">-->
+
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/colorAccent">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/Cash_Detail_PriceSum"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textAlignment="center"-->
+<!--                android:background="#f2463a"-->
+<!--                android:text="Rp.20000000"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textColor="#FFF"-->
+<!--                android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

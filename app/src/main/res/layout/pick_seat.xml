@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ChooseRole">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Table Number"
+        android:textSize="30dp"
+        android:fontFamily="@font/san_francisco"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="100dp"
+        >
+
+    </TextView>
+    <EditText
+        android:id="@+id/et_inputTableNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="40sp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/san_francisco"
+        android:textAlignment="center"
+        android:hint="      "/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="300dp"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-thin"
+        android:background="@drawable/button_cooler"
+        android:text="Confirm" />
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.restaurant"
+    >
+
+    <application
+        android:allowBackup="true"
+        tools:ignore="LockedOrientationActivity"
+        android:icon="@mipmap/logo_new"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity android:name=".ChooseRole"
+            android:label="Choose Role"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Menu_list"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CashierDetail"
+            android:label="Bill"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PickTotalTable"
+            android:label="Number of Table"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Order"
+            android:label="Confirm Order"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".History"
+            android:label="History"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SplashActivity"
+            android:theme="@style/NoTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Cashier"
+            android:label="Table"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Chef"
+            android:label="Order"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PickSeat"
+            android:label="Pick Table"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Customer"
+            android:label="Choose Menu"
+            android:screenOrientation="portrait"/>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

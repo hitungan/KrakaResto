@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Menu_list"
+    android:padding="5dp">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_menu" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bottom_nav"
+        android:layout_above="@id/lin_lay"/>
+
+
+    <LinearLayout
+        android:id="@+id/lin_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="History"
+            android:textSize="30sp"
+            android:layout_weight="0.5"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-thin"
+            android:background="@drawable/button_cooler"/>
+
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="match_parent"></Space>
+
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Order"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-thin"
+            android:background="@drawable/button_cooler"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
